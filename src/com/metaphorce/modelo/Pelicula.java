@@ -1,23 +1,24 @@
+package com.metaphorce.modelo;
 
 public class Pelicula {
     // Attributes
-    private Integer id;
+    private int id;
     private String nombre;
     private boolean disponible;
-    
+
     // Constructor
-    public Alumno(Integer id, String nombre, boolean disponible) {
+    public Pelicula(int id, String nombre, boolean disponible) {
         this.id = id;
         this.nombre = nombre;
         this.disponible = disponible;
     }
-    
+
     // Methods
-    public Integer getId() {
+    public int getId() {
         return this.id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
     
