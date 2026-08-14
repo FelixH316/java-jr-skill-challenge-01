@@ -41,8 +41,8 @@ public class GestorPelicula {
     public void obtenerPeliculas(){
         for(int i = 0; i < this.listaPeliculas.size(); i++){
             System.out.println("Id: " + this.listaPeliculas.get(i).getId() +
-                               "Nombre: " + this.listaPeliculas.get(i).getNombre() +
-                               "Disponible: " + this.listaPeliculas.get(i).getDisponible());
+                               " | Nombre: " + this.listaPeliculas.get(i).getNombre() +
+                               " | Disponible: " + this.listaPeliculas.get(i).getDisponible());
         }
     }
 
@@ -51,7 +51,7 @@ public class GestorPelicula {
             if (this.listaPeliculas.get(i).getDisponible())
             {
                 System.out.println("Id: " + this.listaPeliculas.get(i).getId() +
-                                   "Nombre: " + this.listaPeliculas.get(i).getNombre());
+                                   " | Nombre: " + this.listaPeliculas.get(i).getNombre());
             }
         }
     }
@@ -60,7 +60,7 @@ public class GestorPelicula {
         for (Pelicula currentPelicula : this.listaPeliculas) {
             if (!currentPelicula.getDisponible()) {
                 System.out.println("Id: " + currentPelicula.getId() +
-                                   "Nombre: " + currentPelicula.getNombre());
+                                   " | Nombre: " + currentPelicula.getNombre());
             }
         }
     }
